@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Based on keywords in complaint: 'Large pothole 60cm wide causing tyre damage. Three',
+PM-202402,Pothole,Urgent,Based on keywords in complaint: 'Deep pothole near bus stop. School children at ris',
+PM-202406,Flooding,Standard,Based on keywords in complaint: 'Underpass flooded knee-deep after 2hrs rain. Commu',
+PM-202408,Flooding,Standard,Based on keywords in complaint: 'Bus stand flooded. Passengers standing in water. D',
+PM-202410,Streetlight,Standard,Based on keywords in complaint: 'Three consecutive streetlights out for 10 days. Ar',
+PM-202411,Streetlight,Urgent,Based on keywords in complaint: 'Streetlight flickering and sparking. Electrical ha',
+PM-202413,Waste,Standard,Based on keywords in complaint: 'Overflowing garbage bins near vegetable market. Sm',
+PM-202418,Other,Standard,Based on keywords in complaint: 'Wedding venue playing music past midnight on weekn',NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Based on keywords in complaint: 'Road surface cracked and sinking near utility work',
+PM-202420,Other,Urgent,Based on keywords in complaint: 'Manhole cover missing. Risk of serious injury to c',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Based on keywords in complaint: 'Bridge approach floods in 30mins of rain. Bridge b',
+PM-202428,Other,Standard,Based on keywords in complaint: 'Dead animal not removed for 36 hours. Health conce',NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Based on keywords in complaint: 'Heritage street, lights out. Safety concern for pe'",
+PM-202433,Waste,Standard,Based on keywords in complaint: 'Bulk waste from apartment renovation dumped on pub',
+PM-202446,Other,Urgent,Based on keywords in complaint: 'Footpath tiles broken and upturned. Elderly reside',NEEDS_REVIEW
