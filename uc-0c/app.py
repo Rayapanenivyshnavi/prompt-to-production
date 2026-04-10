@@ -1,41 +1,34 @@
 import argparse
-from openai import OpenAI
-
-client = OpenAI(api_key="sk-123456...")
+import pandas as pd
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
+    parser.add_argument("--ward", required=True)
+    parser.add_argument("--category", required=True)
+    parser.add_argument("--growth-type", required=True)
 
     args = parser.parse_args()
 
-    with open(args.input, "r", encoding="utf-8") as f:
-        policy_text = f.read()
+    if args.growth_type != "MoM":
+        raise ValueError("Only MoM allowed")
 
-    prompt = f"""
-Summarize the policy document.
+    df = pd.read_csv(args.input)
 
-Rules:
-1. Include ALL numbered clauses
-2. Do NOT drop any conditions
-3. Keep words like 'must', 'requires', 'not permitted'
-4. Do NOT add extra information
-5. If meaning is lost, copy exact clause
-6. Mention clause numbers
+    df = df[(df["ward"] == args.ward) & (df["category"] == args.category)]
 
-Document:
-{policy_text}
-"""
+    df["is_null"] = df["actual_spend"].isna()
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}]
-    )
+    df = df.sort_values("period")
 
-    summary = "Project 3 completed"
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
+    df["mom_growth"] = df["actual_spend"].pct_change() * 100
+
+    df["formula"] = "(current - previous) / previous * 100"
+
+    df.to_csv(args.output, index=False)
+
+    print("UC-0C completed successfully")
 
 if __name__ == "__main__":
     main()

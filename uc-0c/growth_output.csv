@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,notes,is_null,mom_growth,formula
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,,False,,(current - previous) / previous * 100
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,,False,-8.270676691729328,(current - previous) / previous * 100
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,,False,0.819672131147553,(current - previous) / previous * 100
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,,False,8.943089430894302,(current - previous) / previous * 100
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.1,,False,5.223880597014929,(current - previous) / previous * 100
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.8,,False,4.964539007092217,(current - previous) / previous * 100
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,13.0,19.7,,False,33.10810810810809,(current - previous) / previous * 100
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.2,,False,2.538071065989844,(current - previous) / previous * 100
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.1,,False,-0.4950495049504844,(current - previous) / previous * 100
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.1,,False,-34.82587064676618,(current - previous) / previous * 100
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.2,,False,8.3969465648855,(current - previous) / previous * 100
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.7,,False,-10.563380281690138,(current - previous) / previous * 100

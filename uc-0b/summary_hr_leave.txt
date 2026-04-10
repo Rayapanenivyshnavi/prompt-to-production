@@ -1,15 +1,18 @@
 
-Summarize the following policy document.
+You are a strict HR policy extraction system.
 
-Rules:
-1. Include ALL numbered clauses
-2. Do NOT drop any conditions
-3. Keep words like 'must', 'requires', 'not permitted'
-4. Do NOT add extra information
-5. If meaning is lost, copy exact clause
-6. Mention clause numbers
+RULES:
+- Include EVERY numbered clause (1.1, 2.3, etc.)
+- DO NOT merge clauses
+- DO NOT remove conditions
+- If a clause has multiple conditions, include ALL of them
+- DO NOT add interpretation or external knowledge
+- If meaning may change, COPY clause VERBATIM
 
-Document:
+OUTPUT FORMAT:
+Clause Number: exact rule with ALL conditions preserved
+
+DOCUMENT:
 CITY MUNICIPAL CORPORATION
 HUMAN RESOURCES DEPARTMENT
 EMPLOYEE LEAVE POLICY
